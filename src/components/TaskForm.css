@@ -17,6 +17,7 @@ h1 {
 }
 
 .taskCreateForm {
+  font-size: 17px;
   display: flex;
   gap: 5px;
 }
@@ -27,6 +28,7 @@ h1 {
   padding: 15px;
   border-radius: 8px;
   border: solid 3px rgb(14, 97, 174);
+  font-size: 17px;
 }
 
 .buttonCreate {
@@ -35,7 +37,7 @@ h1 {
   background-color: rgb(14, 97, 174);
   color: rgb(7, 4, 11);
   padding: 3px 20px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .buttonCreate:hover {
@@ -58,7 +60,7 @@ h1 {
 
 .taskTitle {
   flex: 1;
-  font-size: 17px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -74,6 +76,7 @@ h1 {
   background-color: rgb(63, 163, 230);
   color: black;
   padding: 10px 20px;
+  font-size: 17px;
 }
 
 .button:hover {
@@ -81,9 +84,9 @@ h1 {
 }
 
 .buttonDelete {
-  font-size: 16px;
+  font-size: 17px;
   border-radius: 8px;
-  background-color: rgb(208, 40, 40);
+  background-color: rgb(220, 92, 92);
   color: black;
   padding: 10px 20px;
 }
@@ -94,3 +97,7 @@ h1 {
   font-size: 17px;
 }
  
+.checkbox {
+  height: 20px;
+  width: 20px;
+}

@@ -39,7 +39,7 @@ export default function TaskList({item, onChecked, onUpdate, onDelete}) {
     return (
       <div className="taskInfo">
         <span className="taskTitle">{showItem(item)}</span>
-        <input type="checkbox" checked={item.completed} onChange={() => onChecked(item.id)}/>
+        <input type="checkbox" className="checkbox" checked={item.completed} onChange={() => onChecked(item.id)}/>
         <button className="button" onClick={() => setIsEdit(true)}>Editar</button>
         <button className="buttonDelete" onClick={() => onDelete(item.id)}>Eliminar</button>
       </div>
