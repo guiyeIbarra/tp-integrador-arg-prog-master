@@ -1,10 +1,11 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import TaskList from "./TaskList";
 import "./TaskForm.css";
 
 export default function TaskForm() {
   const [title, setTitle] = useState('')
   const [todos, setTodos] = useState([])
+  
 
   function handleChange(event) {
     const value = event.target.value;
@@ -43,8 +44,9 @@ export default function TaskForm() {
     const item = temp.find(item => item.id === id)
     item.completed = !item.completed
     setTodos(temp)
-  }
 
+  }
+  
   return  <div className="taskContainer">
     <form className="taskCreateForm" onSubmit={handleSubmit}>
       <input onChange={handleChange} placeholder="Ingresar nueva tarea" className="taskInput" value={title}/>
